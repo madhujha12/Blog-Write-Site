@@ -9,9 +9,22 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">
+                <h1>🍽️ Yummy Bites!</h1>
+            </div>
+            <ul class="desktop-nav">
                 <li><a href="#home">🏠 Home</a></li>
                 <li><a href="#about">👨‍🍳 About</a></li>
+                <li><a href="#blog-posts">📖 Blog</a></li>
+                <li><a href="#contact">📞 Contact Us</a></li>
+            </ul>
+            <div id="hamburger" class="hamburger">
+                &#9776; 
+            </div>
+            <ul id="mobileNav" class="mobile-nav">
+                <li><a href="#home">🏠 Home</a></li>
+                <li><a href="#about">👨‍🍳 About</a></li>
+                <li><a href="#blog-posts">📖 Blog</a></li>
                 <li><a href="#contact">📞 Contact Us</a></li>
             </ul>
         </nav>
@@ -19,9 +32,19 @@
 
     <section id="home">
         <div class="content">
-            <h1>🏠 Welcome to My Food Blog!</h1>
-            <p>🍕 Discover the joy of cooking! 🍔.</p>
+            <h2>🏠 Welcome to My Food Blog!</h2>
+            <p>🍕 Discover the joy of cooking! 🍔</p>
             <button id="createPostButton">+ Create a Blog</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="content">
+            <h2>👨‍🍳 About Us</h2>
+            <p>Welcome to Yummy Bites, your ultimate destination for delicious recipes, kitchen tips, and food inspiration! 🍽️✨
+
+            </p>
+            <p>We share delicious recipes, cooking tips, and food adventures. Stay tuned!</p>
         </div>
     </section>
 
@@ -29,6 +52,13 @@
         <div class="content">
             <h2>📖 Food Blogs</h2>
             <div id="postsContainer" class="posts"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>📞 Contact Us</h2>
+            <p>Email: yummybtes.com</p>
         </div>
     </section>
 
@@ -40,8 +70,18 @@
             <textarea id="content" placeholder="Write your blog content..."></textarea>
             <input type="file" id="imageUpload">
             <button id="submitBlogButton">Submit</button>
+            
+            <div id="previewSection">
+                <h3>Preview:</h3>
+                <h4 id="previewTitle"></h4>
+                <p id="previewContent"></p>
+                <img id="previewImage" src="" alt="Preview Image" style="max-width: 100%;"/>
+            </div>
         </div>
     </div>
+    <footer>
+        <p>© 2025 Yummy Bites. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
